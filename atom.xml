@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>本章の笔记</title>
+  
+  <subtitle>无限可能</subtitle>
+  <link href="http://xiaozhaoc.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://xiaozhaoc.github.io/"/>
+  <updated>2021-09-10T12:36:18.772Z</updated>
+  <id>http://xiaozhaoc.github.io/</id>
+  
+  <author>
+    <name>Mr.zhao</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://xiaozhaoc.github.io/posts/hello-world/3eeb.html"/>
+    <id>http://xiaozhaoc.github.io/posts/hello-world/3eeb.html</id>
+    <published>2021-09-10T10:40:27.414Z</published>
+    <updated>2021-09-10T12:36:18.772Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
