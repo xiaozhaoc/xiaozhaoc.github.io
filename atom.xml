@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>本章の笔记</title>
+  <title>搬砖笔记</title>
   
   <subtitle>无限可能</subtitle>
   <link href="http://xiaozhaoc.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaozhaoc.github.io/"/>
-  <updated>2021-09-12T05:27:57.658Z</updated>
+  <updated>2021-09-12T06:46:21.404Z</updated>
   <id>http://xiaozhaoc.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://xiaozhaoc.github.io/posts/c9f9.html"/>
     <id>http://xiaozhaoc.github.io/posts/c9f9.html</id>
     <published>2021-09-12T05:17:27.000Z</published>
-    <updated>2021-09-12T05:27:57.658Z</updated>
+    <updated>2021-09-12T06:46:21.404Z</updated>
     
     
       
