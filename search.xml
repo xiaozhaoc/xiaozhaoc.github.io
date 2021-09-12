@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>test2</title>
+      <link href="/posts/c9f9.html"/>
+      <url>/posts/c9f9.html</url>
+      
+        <content type="html"><![CDATA[<div class="uk-alert uk-alert-danger"><i class="fas fa-exclamation-triangle"></i> 紅色</div><div class="uk-alert uk-alert-success"><i class="fa fa-check-circle"></i> 綠色</div><div class="uk-alert uk-alert-warning"><i class="fa fa-exclamation-circle"></i> 黃色</div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/posts/f82e.html"/>
       <url>/posts/f82e.html</url>
