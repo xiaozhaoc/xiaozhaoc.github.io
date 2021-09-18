@@ -32,7 +32,7 @@
  </style>
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test2, java,hadoop,spark,bigdata,cs,data">
+    <meta name="keywords" content="数据结构-线性表-顺序表(c语言), java,hadoop,spark,bigdata,cs,data">
     <meta name="description" content="一个菜鸟的技术日常">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -44,7 +44,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test2 | 搬砖笔记</title>
+    <title>数据结构-线性表-顺序表(c语言) | 搬砖笔记</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/libs/awesome/css/all.css">
@@ -322,12 +322,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test2</h1>
+                    <h1 class="description center-align post-title">数据结构-线性表-顺序表(c语言)</h1>
                 </div>
             </div>
         </div>
@@ -443,14 +443,31 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/hexo/">
-                                <span class="chip bg-color">hexo</span>
+                            <a href="/tags/c/">
+                                <span class="chip bg-color">c</span>
+                            </a>
+                        
+                            <a href="/tags/datastructure/">
+                                <span class="chip bg-color">datastructure</span>
+                            </a>
+                        
+                            <a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">
+                                <span class="chip bg-color">课堂笔记</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/datastructure/" class="post-category">
+                                datastructure
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -459,21 +476,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-12
+                    2021-09-15
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-12
+                    2021-09-17
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    6
+                    1.1k
                 </div>
                 
 
@@ -490,9 +507,269 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <div class="uk-alert uk-alert-danger"><i class="fas fa-exclamation-triangle"></i> 紅色</div>
-<div class="uk-alert uk-alert-success"><i class="fa fa-check-circle"></i> 綠色</div>
-<div class="uk-alert uk-alert-warning"><i class="fa fa-exclamation-circle"></i> 黃色</div>
+                <h2 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h2><h3 id="线性表的定义"><a href="#线性表的定义" class="headerlink" title="线性表的定义"></a>线性表的定义</h3><div class="uk-alert uk-alert-success"><i class="fa fa-check-circle"></i> 
+​	一个数据元素可以由若干个数据项组成。数据元素称为记录，含有大量记录的线性表又称为文件。这种结构具有下列特点：存在一个唯一的没有前驱的（头）数据元素；存在一个唯一的没有后继的（尾）数据元素；此外，每一个数据元素均有一个直接前驱和一个直接后继数据元素。 
+</div>　　
+
+<h3 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h3><p>​    <strong>顺序表</strong>是在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%86%85%E5%AD%98">计算机内存</a>中以<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B0%E7%BB%84">数组</a>的形式保存的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BA%BF%E6%80%A7%E8%A1%A8">线性表</a>，是指用一组<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80">地址</a>连续的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=%E5%AD%98%E5%82%A8%E5%8D%95%E5%85%83&amp;action=edit&amp;redlink=1">存储单元</a>依次存储数据元素的线性结构，使得线性表中在逻辑结构上相邻的数据元素存储在相邻的物理存储单元中，即通过数据元素物理存储的相邻关系来反映数据元素之间逻辑上的相邻关系。</p>
+<hr>
+<h4 id="顺序表头文件-SeqList-c"><a href="#顺序表头文件-SeqList-c" class="headerlink" title="顺序表头文件(SeqList.c)"></a>顺序表头文件(SeqList.c)</h4><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">ifndef</span> _SEQLIST_H_</span>
+<span class="token macro property">#<span class="token directive keyword">define</span> _SEQLIST_H_</span>
+<span class="token keyword">typedef</span> <span class="token keyword">void</span> SeqList<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//void 起别名为SeqList</span>
+<span class="token keyword">typedef</span> <span class="token keyword">void</span> SeqListNode<span class="token punctuation">;</span>
+SeqList<span class="token operator">*</span> <span class="token function">SeqList_Create</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">SeqList_Destory</span><span class="token punctuation">(</span>SeqList <span class="token operator">*</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">void</span> <span class="token function">SeqList_Clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span>  <span class="token function">SeqList_Length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span>  <span class="token function">SeqList_Capacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+</code></pre>
+<h4 id="一-创建顺序表-SeqListAll-c"><a href="#一-创建顺序表-SeqListAll-c" class="headerlink" title="一. 创建顺序表(SeqListAll.c)"></a>一. 创建顺序表(SeqListAll.c)</h4><ol>
+<li><p>定义一个struct来保存顺序表信息</p>
+</li>
+<li><p>为头节点分配内存</p>
+</li>
+<li><p>为顺序表分配空间，将顺序表空间地址保存在头节点中</p>
+</li>
+<li><p>将头节点地址返回给调用者</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//创建顺序表</span>
+SeqList<span class="token operator">*</span>  <span class="token function">SeqList_Create</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> ret<span class="token punctuation">;</span>
+    TSeqList<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TSeqList<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//为头节点分配空间</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//中间对象分配失败</span>
+        ret <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Create() error:%d\n"</span><span class="token punctuation">,</span>ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//memset(temp,0,sizeof(TSeqList)); //填充</span>
+    temp<span class="token operator">-></span>capacity <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
+    temp<span class="token operator">-></span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    temp<span class="token operator">-></span>node <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">*</span> capacity<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//分配一个指针数组</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>node<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//中间对象投指针分配失败</span>
+        ret <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Create() error:%d\n"</span><span class="token punctuation">,</span>ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ol>
+<h4 id="二、求顺序表的容量"><a href="#二、求顺序表的容量" class="headerlink" title="二、求顺序表的容量"></a>二、求顺序表的容量</h4><ul>
+<li><p>直接从头节点获取</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//获取容量</span>
+<span class="token keyword">int</span> <span class="token function">SeqList_Capacity</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TSeqList<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList<span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> temp<span class="token operator">-></span>capacity<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="三、获取顺序表长度"><a href="#三、获取顺序表长度" class="headerlink" title="三、获取顺序表长度"></a>三、获取顺序表长度</h4><ul>
+<li><p>直接从头节点获取</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//求顺序表的长度</span>
+<span class="token keyword">int</span> <span class="token function">SeqList_Length</span><span class="token punctuation">(</span>SeqList <span class="token operator">*</span> list<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TSeqList <span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span>list<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> temp<span class="token operator">-></span>length<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="四、插入元素"><a href="#四、插入元素" class="headerlink" title="四、插入元素"></a>四、插入元素</h4><ul>
+<li><p>当顺序表已满时，表中的元素向后无法移动。需要做出特别处理【不插入or开辟一块更大的空间】</p>
+</li>
+<li><p>当插入的位置是空闲区域时，需要作出相应处理</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//插入元素</span>
+<span class="token keyword">int</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">,</span>SeqListNode<span class="token operator">*</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> pos<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+    TSeqList <span class="token operator">*</span>temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span> <span class="token operator">||</span> node<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//顺序表满了</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>length <span class="token operator">>=</span> temp<span class="token operator">-></span>capacity<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>pos<span class="token operator">></span>temp<span class="token operator">-></span>length<span class="token punctuation">)</span>
+        pos <span class="token operator">=</span> temp<span class="token operator">-></span>length<span class="token punctuation">;</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span>temp<span class="token operator">-></span>length<span class="token punctuation">;</span>i<span class="token operator">></span>pos<span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        temp<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>node<span class="token punctuation">;</span>
+    temp<span class="token operator">-></span>length<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="五、删除元素"><a href="#五、删除元素" class="headerlink" title="五、删除元素"></a>五、删除元素</h4><ul>
+<li><p>从顺序表中删除某一个元素后需要将后面的元素依次向前移动来不齐空位</p>
+<pre class=" language-c"><code class="language-c"><span class="token operator">/</span>删除元素
+SeqList<span class="token operator">*</span> <span class="token function">SeqList_Delete</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">,</span><span class="token keyword">int</span> pos<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
+    TSeqList<span class="token operator">*</span>  tlist <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    SeqListNode<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    tlist <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span>list<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">=</span><span class="token constant">NULL</span><span class="token operator">||</span> pos <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token operator">||</span> pos<span class="token operator">>=</span> tlist<span class="token operator">-></span>capacity<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"SeqList_DELET ERROR\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span> <span class="token punctuation">)</span>tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>pos<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//要删除的元素</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span>pos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>tlist<span class="token operator">-></span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">=</span> tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    tlist<span class="token operator">-></span>length<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="六、查找元素"><a href="#六、查找元素" class="headerlink" title="六、查找元素"></a>六、查找元素</h4><ul>
+<li><p>使用数组下标查找,非常方便</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//查找</span>
+SeqList<span class="token operator">*</span> <span class="token function">SeqList_Get</span><span class="token punctuation">(</span>SeqList <span class="token operator">*</span> list<span class="token punctuation">,</span><span class="token keyword">int</span> pos<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">//健壮性判断</span>
+    TSeqList<span class="token operator">*</span> tlist <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    SeqListNode<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    tlist <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token operator">||</span> pos<span class="token operator">&lt;</span><span class="token number">0</span> <span class="token operator">||</span> pos <span class="token operator">>=</span> tlist<span class="token operator">-></span>capacity<span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"SeqList_Get error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span>tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>pos<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="七、清空表"><a href="#七、清空表" class="headerlink" title="七、清空表"></a>七、清空表</h4><ul>
+<li><p>将表中的元素全部置为0</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//清空表</span>
+<span class="token keyword">void</span> <span class="token function">SeqListClean</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TSeqList <span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
+    temp<span class="token operator">-></span>length<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//menset(temp->node,0,(temp->capacity * sizeof(void *)));</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="八、销毁表"><a href="#八、销毁表" class="headerlink" title="八、销毁表"></a>八、销毁表</h4><ul>
+<li><p>将整个表销毁</p>
+<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//销毁表</span>
+<span class="token keyword">void</span> <span class="token function">Seqlist_Destory</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    TSeqList<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>node <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">free</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">free</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+</ul>
+<h4 id="九、测试-test-c"><a href="#九、测试-test-c" class="headerlink" title="九、测试(test.c)"></a>九、测试(test.c)</h4><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"SeqList.c"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;malloc.h></span></span>
+
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span> _Teacher <span class="token punctuation">{</span>
+    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">32</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> age<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>Teacher<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">int</span> ret <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    SeqList<span class="token operator">*</span> list <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
+    Teacher t1<span class="token punctuation">,</span>t2<span class="token punctuation">,</span>t3<span class="token punctuation">,</span>t4<span class="token punctuation">,</span>t5<span class="token punctuation">;</span>
+    t1<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">31</span><span class="token punctuation">;</span>
+    t2<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
+    t3<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">33</span><span class="token punctuation">;</span>
+    t4<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">34</span><span class="token punctuation">;</span>
+    t5<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">35</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//创建节点</span>
+    list <span class="token operator">=</span> <span class="token function">SeqList_Create</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//插入节点</span>
+    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t1<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t2<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t3<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t4<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t5<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"顺序表容量%d\n"</span><span class="token punctuation">,</span><span class="token function">SeqList_Capacity</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"顺序表长度%d\n"</span><span class="token punctuation">,</span><span class="token function">SeqList_Length</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">//遍历顺序表</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"遍历顺序表: \n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token function">SeqList_Length</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        Teacher<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token punctuation">(</span>Teacher <span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">SeqList_Get</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Get error"</span><span class="token punctuation">,</span>ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">//return;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"age: %d\n"</span><span class="token punctuation">,</span>temp<span class="token operator">-></span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">//销毁链表</span>
+    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"销毁顺序表: \n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token function">SeqList_Length</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Teacher <span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token punctuation">(</span>Teacher <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">SeqList_Delete</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Delete error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"age :%d\n"</span><span class="token punctuation">,</span>temp<span class="token operator">-></span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">Seqlist_Destory</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
                 
             </div>
             <hr/>
@@ -518,7 +795,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiaozhaoc.github.io/posts/c9f9.html">http://xiaozhaoc.github.io/posts/c9f9.html</a>
+                    <a href="http://xiaozhaoc.github.io/posts/d180.html">http://xiaozhaoc.github.io/posts/d180.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -556,8 +833,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/hexo/">
-                                    <span class="chip bg-color">hexo</span>
+                                <a href="/tags/c/">
+                                    <span class="chip bg-color">c</span>
+                                </a>
+                            
+                                <a href="/tags/datastructure/">
+                                    <span class="chip bg-color">datastructure</span>
+                                </a>
+                            
+                                <a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">
+                                    <span class="chip bg-color">课堂笔记</span>
                                 </a>
                             
                         </div>
@@ -999,13 +1284,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/d180.html">
+                <a href="/posts/0.html">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/3.jpg" class="responsive-img" alt="数据结构-线性表-顺序表(c语言)">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">数据结构-线性表-顺序表(c语言)</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1016,35 +1301,15 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-15
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-17
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/datastructure/" class="post-category">
-                                    datastructure
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Mr.zhao
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/c/">
-                        <span class="chip bg-color">c</span>
-                    </a>
-                    
-                    <a href="/tags/datastructure/">
-                        <span class="chip bg-color">datastructure</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">
-                        <span class="chip bg-color">课堂笔记</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -1056,13 +1321,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/f82e.html">
+                <a href="/posts/c9f9.html">
                     <div class="card-image">
                         
                         
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/10.jpg" class="responsive-img" alt="test">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/0.jpg" class="responsive-img" alt="test2">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">test2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1082,6 +1347,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
                 </div>
                 
             </div>

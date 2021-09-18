@@ -6,7 +6,7 @@
   <link href="http://xiaozhaoc.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaozhaoc.github.io/"/>
-  <updated>2021-09-12T06:46:21.404Z</updated>
+  <updated>2021-09-17T13:33:27.503Z</updated>
   <id>http://xiaozhaoc.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://xiaozhaoc.github.io/posts/0.html"/>
+    <id>http://xiaozhaoc.github.io/posts/0.html</id>
+    <published>2021-09-17T12:40:59.744Z</published>
+    <updated>2021-09-17T13:33:27.503Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;计算机组成原理-计算机的运算方法&quot;&gt;&lt;a href=&quot;#计算机组成原理-计算机的运算方法&quot; class=&quot;headerlink&quot; title=&quot;计算机组成原理-计算机的运算方法&quot;&gt;&lt;/a&gt;计算机组成原理-计算机的运算方法&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构-线性表-顺序表(c语言)</title>
+    <link href="http://xiaozhaoc.github.io/posts/d180.html"/>
+    <id>http://xiaozhaoc.github.io/posts/d180.html</id>
+    <published>2021-09-15T12:54:34.000Z</published>
+    <updated>2021-09-17T09:14:29.081Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;线性表&quot;&gt;&lt;a href=&quot;#线性表&quot; class=&quot;headerlink&quot; title=&quot;线性表&quot;&gt;&lt;/a&gt;线性表&lt;/h2&gt;&lt;h3 id=&quot;线性表的定义&quot;&gt;&lt;a href=&quot;#线性表的定义&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="datastructure" scheme="http://xiaozhaoc.github.io/categories/datastructure/"/>
+    
+    
+    <category term="c" scheme="http://xiaozhaoc.github.io/tags/c/"/>
+    
+    <category term="datastructure" scheme="http://xiaozhaoc.github.io/tags/datastructure/"/>
+    
+    <category term="课堂笔记" scheme="http://xiaozhaoc.github.io/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>test2</title>
