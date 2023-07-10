@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Java函数式编程学习记录</title>
+      <link href="/posts/1f32.html"/>
+      <url>/posts/1f32.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Java函数式编程"><a href="#Java函数式编程" class="headerlink" title="Java函数式编程"></a>Java函数式编程</h1><h3 id="函数式编程-vs-面向对象编程"><a href="#函数式编程-vs-面向对象编程" class="headerlink" title="函数式编程 vs 面向对象编程"></a>函数式编程 vs 面向对象编程</h3><h4 id="两者的区别"><a href="#两者的区别" class="headerlink" title="两者的区别"></a>两者的区别</h4><ul><li>面向对象需要关注用什么对象完成什么事情，</li><li>函数式编程主要关注的是对数据进行了什么操作</li></ul><p>面向对象编程通过创建对象、定义属性和方法来解决问题，强调对象的状态和行为。而函数式编程通过定义和组合函数来解决问题，强调函数的输入和输出。</p><h3 id="Lambda表达式"><a href="#Lambda表达式" class="headerlink" title="Lambda表达式"></a>Lambda表达式</h3><p>Lambda表达式的主要功能是可以对某些匿名内部类进行简化。使得代码更加整洁清晰</p><h4 id="核心原则"><a href="#核心原则" class="headerlink" title="核心原则"></a>核心原则</h4><p>可推导可省略</p><h4 id="使用必要条件"><a href="#使用必要条件" class="headerlink" title="使用必要条件"></a>使用必要条件</h4><p>匿名内部类必须为接口且只有一个抽象方法需要重写</p><h4 id="example1"><a href="#example1" class="headerlink" title="example1"></a>example1</h4><ul><li>Lambda写法</li></ul><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/image-20230710170541192.png" alt="image-20230710170541192"><ul><li>普通写法</li></ul><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/image-20230710170558764.png" alt="image-20230710170558764" style="zoom: 115%;"><h4 id="example2"><a href="#example2" class="headerlink" title="example2"></a>example2</h4><p>抽象接口IntBinaryOperator的内容如下:</p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101744066.png" alt="image-20230710173744204" style="zoom:95%;"><ul><li>普通写法</li></ul><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101734500.png" alt="image-20230710173437091" style="zoom:78%;"><ul><li><p>lambda写法</p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101744147.png" alt="image-20230710174008235" style="zoom:85%;"></li></ul><h4 id="省略规则"><a href="#省略规则" class="headerlink" title="省略规则"></a>省略规则</h4><ul><li><p>参数类型可以省略</p></li><li><p>方法体只有一句时大括号和return和分号可以省略</p></li><li><p>方法只有一个参数时小括号可以省略</p><h5 id="example"><a href="#example" class="headerlink" title="example"></a>example</h5><ul><li><p>省略前</p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101744021.png" alt="image-20230710174311878" style="zoom:95%;"></li><li><p>省略后</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101744062.png" alt="image-20230710174355840"></p></li></ul></li></ul><h3 id="Stream流"><a href="#Stream流" class="headerlink" title="Stream流"></a>Stream流</h3><h4 id="Stream流的作用"><a href="#Stream流的作用" class="headerlink" title="Stream流的作用"></a>Stream流的作用</h4><p>大数据量下处理集合效率更高</p><ul><li><p>并行流</p></li><li><p>消灭嵌套地狱</p></li><li><p>代码可读性高</p></li></ul><h4 id="数据准备"><a href="#数据准备" class="headerlink" title="数据准备"></a>数据准备</h4><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101747367.png" alt="image-20230710174728779" style="zoom:80%;"><h4 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h4><ul><li><p>匿名内部类写法</p><p>  <img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101750514.png" alt="image-20230710174924258"></p></li><li><p>Lambda写法</p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101750661.png" alt="image-20230710174941132" style="zoom:80%;"></li></ul><h4 id="创建流"><a href="#创建流" class="headerlink" title="创建流"></a>创建流</h4><ul><li><h5 id="单列集合"><a href="#单列集合" class="headerlink" title="单列集合"></a>单列集合</h5><pre class=" language-java"><code class="language-java">集合对象<span class="token punctuation">.</span><span class="token function">Stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101751694.png" alt="image-20230710175053030" style="zoom:150%;"></li><li><h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><pre class=" language-java"><code class="language-java">Arrays<span class="token punctuation">.</span>stream</code></pre><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101813682.png" alt="image-20230710175228482" style="zoom:150%;"></li><li><h5 id="双列集合"><a href="#双列集合" class="headerlink" title="双列集合"></a>双列集合</h5><p>转为单列集合再创建 </p><pre class=" language-java"><code class="language-java">map<span class="token punctuation">.</span><span class="token function">entrySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">Stream</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101813240.png" alt="image-20230710175453709" style="zoom:150%;"></li><li><h5 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h5><p>1、惰性求值（如果没有终结操作，没有中间操作是不会得到快行的）<br>2、流是一次性的（二旦一个流对像经过一个终结操作后。这个流就不能再被使用）<br>3、不会影响原数据（我们在流中可以多数据做很多处理。但是正常情况下是不会影响原来集合</p></li></ul><h4 id="中间操作"><a href="#中间操作" class="headerlink" title="中间操作"></a>中间操作</h4><ul><li><h5 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h5><p>可以对流中的元素进行条件过滤，符合条件的继续留在流中</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101813292.png" alt="image-20230710175722633"></p></li><li><h5 id="map"><a href="#map" class="headerlink" title="map"></a>map</h5><p>可以把对流中的元素进行计算或转换。</p><h6 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h6><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101813998.png" alt="image-20230710175843777" style="zoom:150%;"><h6 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h6><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101813472.png" alt="image-20230710175859855" style="zoom:150%;"></li><li><h5 id="distinct"><a href="#distinct" class="headerlink" title="distinct"></a>distinct</h5><p>可以去除流中的重复元素</p><div class="uk-alert uk-alert-danger"><i class="fas fa-exclamation-triangle"></i> - 注意：distinct方法是依赖Object的equals方法来判断是否是相同对象的。所以需要注意重写equals方法。</div><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101813573.png" alt="image-20230710180050630"></p></li><li><h5 id="sorted"><a href="#sorted" class="headerlink" title="sorted"></a>sorted</h5><p>可以对流中的元素进行排序</p><div class="uk-alert uk-alert-danger"><i class="fas fa-exclamation-triangle"></i> -  返回由该流的元素组成的流，按自然顺序排序。如果此流的元素不是Comparable，则在执行终端操作时可能会抛出 。java.lang.ClassCastException</div><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812235.png" alt="image-20230710180100586"></p></li><li><h5 id="limit"><a href="#limit" class="headerlink" title="limit"></a>limit</h5><p>限制输出</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812466.png" alt="image-20230710180112817"></p></li><li><h5 id="skip"><a href="#skip" class="headerlink" title="skip"></a>skip</h5><p>跳过元素</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812530.png" alt="image-20230710180125656"></p></li><li><h5 id="flatMap"><a href="#flatMap" class="headerlink" title="flatMap"></a>flatMap</h5><p>map只能把一个对象转换成另一个对象来作为流中的元素。而flatMap可以把一个对象转换成多个对象作为流中的元素。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812731.png" alt="image-20230710180145491"></p></li></ul><h4 id="终结操作"><a href="#终结操作" class="headerlink" title="终结操作"></a>终结操作</h4><ul><li><h5 id="count"><a href="#count" class="headerlink" title="count"></a>count</h5><p>可以用来获取当前流中元素的个数。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812887.png" alt="image-20230710180256266"></p></li><li><h5 id="max-min"><a href="#max-min" class="headerlink" title="max/min"></a>max/min</h5><p>求最大最小值</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812887.png"></p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812832.png" alt="image-20230710180314936"></p></li><li><h5 id="collect"><a href="#collect" class="headerlink" title="collect"></a>collect</h5><p>把当前流转换成一个集合。</p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812251.png" alt="image-20230710180410873" style="zoom:150%;"></li><li><h5 id="reduce归并"><a href="#reduce归并" class="headerlink" title="reduce归并"></a>reduce归并</h5><p>对流中的数据按照你指定的计算方式计算出一个结果。</p><p>官方给出的源码格式</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812897.png" alt="image-20230710180518039"></p><h6 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h6><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812822.png" alt="image-20230710180551732"></p><h6 id="reduce的另一种重载方法"><a href="#reduce的另一种重载方法" class="headerlink" title="reduce的另一种重载方法"></a>reduce的另一种重载方法</h6><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812050.png" alt="image-20230710181046650"></p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812281.png" alt="image-20230710180700950"></p></li></ul><h4 id="查找与匹配"><a href="#查找与匹配" class="headerlink" title="查找与匹配"></a>查找与匹配</h4><ul><li><h5 id="anyMatch"><a href="#anyMatch" class="headerlink" title="anyMatch"></a>anyMatch</h5><p>可以用来判断是否有任意符合匹配条件的元素，结果为boolean类型。</p><p><img src="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307101812357.png" alt="image-20230710180718185"></p></li><li><p>allMatch</p><p>可以用来判断是否有全部符合匹配条件的元素</p></li><li><p>noneMatch</p><p>可以用来判断是否有全部不符合匹配条件的元素</p></li></ul><h4 id="方法引用"><a href="#方法引用" class="headerlink" title="方法引用"></a>方法引用</h4><p>我们在使用ambda时，如果方法体中只有一个方法的调用的话（包括构造方法），我们可以用方法引用进一步简化代码。</p><h4 id="基本格式"><a href="#基本格式" class="headerlink" title="基本格式"></a>基本格式</h4><pre class=" language-java"><code class="language-java">类名或者对象名<span class="token operator">:</span><span class="token operator">:</span>方法名</code></pre><h5 id="引用类的静态方法"><a href="#引用类的静态方法" class="headerlink" title="引用类的静态方法"></a>引用类的静态方法</h5><ul><li><p>类名::方法名</p><p> 使用前提如果我们在重写方法的时候，方法体中只有一行代码，并目这行代码是调用了某个类的静态方法，并目我们把要重写的抽象方法中所有的参数都按照顺序传入了这个静态方法中，这个时候我们就可以引用类的静态方法。</p></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 函数式编程 </tag>
+            
+            <tag> 学习记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
@@ -59,19 +88,6 @@
             <tag> hexo </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>test</title>
-      <link href="/posts/f82e.html"/>
-      <url>/posts/f82e.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
       
     </entry>
     
