@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>搬砖笔记</title>
+  <title>帅章の自闭日记</title>
   
-  <subtitle>无限可能</subtitle>
+  <subtitle>个人编程記录</subtitle>
   <link href="http://xiaozhaoc.github.io/atom.xml" rel="self"/>
   
   <link href="http://xiaozhaoc.github.io/"/>
@@ -10,7 +10,7 @@
   <id>http://xiaozhaoc.github.io/</id>
   
   <author>
-    <name>Mr.zhao</name>
+    <name>zhang</name>
     
   </author>
   
