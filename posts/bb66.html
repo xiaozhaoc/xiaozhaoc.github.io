@@ -32,7 +32,7 @@
  </style>
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="数据结构-线性表-顺序表(c语言), Java,hadoop,spark,SpringBoot,HTML,CSS,Vue.js">
+    <meta name="keywords" content="SpringCloud  Eureka学习记录, Java,hadoop,spark,SpringBoot,HTML,CSS,Vue.js">
     <meta name="description" content="一个菜鸟的技术日常">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -44,7 +44,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>数据结构-线性表-顺序表(c语言) | 帅章の自闭日记</title>
+    <title>SpringCloud  Eureka学习记录 | 帅章の自闭日记</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/libs/awesome/css/all.css">
@@ -345,7 +345,7 @@
 <script src="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '123456';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -358,12 +358,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">数据结构-线性表-顺序表(c语言)</h1>
+                    <h1 class="description center-align post-title">SpringCloud  Eureka学习记录</h1>
                 </div>
             </div>
         </div>
@@ -479,31 +479,14 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/c/">
-                                <span class="chip bg-color">c</span>
-                            </a>
-                        
-                            <a href="/tags/datastructure/">
-                                <span class="chip bg-color">datastructure</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">课堂笔记</span>
+                            <a href="/tags/SpringCloud/">
+                                <span class="chip bg-color">SpringCloud</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/datastructure/" class="post-category">
-                                datastructure
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -512,21 +495,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-15
+                    2023-07-28
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-07-10
+                    2023-07-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.7k
                 </div>
                 
 
@@ -548,268 +531,233 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h2><h3 id="线性表的定义"><a href="#线性表的定义" class="headerlink" title="线性表的定义"></a>线性表的定义</h3><div class="uk-alert uk-alert-success"><i class="fa fa-check-circle"></i> 
-​	一个数据元素可以由若干个数据项组成。数据元素称为记录，含有大量记录的线性表又称为文件。这种结构具有下列特点：存在一个唯一的没有前驱的（头）数据元素；存在一个唯一的没有后继的（尾）数据元素；此外，每一个数据元素均有一个直接前驱和一个直接后继数据元素。 
-</div>　　
-
-<h3 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h3><p>​    <strong>顺序表</strong>是在<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%86%85%E5%AD%98">计算机内存</a>中以<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%95%B0%E7%BB%84">数组</a>的形式保存的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BA%BF%E6%80%A7%E8%A1%A8">线性表</a>，是指用一组<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9C%B0%E5%9D%80">地址</a>连续的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title=%E5%AD%98%E5%82%A8%E5%8D%95%E5%85%83&amp;action=edit&amp;redlink=1">存储单元</a>依次存储数据元素的线性结构，使得线性表中在逻辑结构上相邻的数据元素存储在相邻的物理存储单元中，即通过数据元素物理存储的相邻关系来反映数据元素之间逻辑上的相邻关系。</p>
-<hr>
-<h4 id="顺序表头文件-SeqList-c"><a href="#顺序表头文件-SeqList-c" class="headerlink" title="顺序表头文件(SeqList.c)"></a>顺序表头文件(SeqList.c)</h4><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">ifndef</span> _SEQLIST_H_</span>
-<span class="token macro property">#<span class="token directive keyword">define</span> _SEQLIST_H_</span>
-<span class="token keyword">typedef</span> <span class="token keyword">void</span> SeqList<span class="token punctuation">;</span><span class="token comment" spellcheck="true">//void 起别名为SeqList</span>
-<span class="token keyword">typedef</span> <span class="token keyword">void</span> SeqListNode<span class="token punctuation">;</span>
-SeqList<span class="token operator">*</span> <span class="token function">SeqList_Create</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">void</span> <span class="token function">SeqList_Destory</span><span class="token punctuation">(</span>SeqList <span class="token operator">*</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">void</span> <span class="token function">SeqList_Clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span>  <span class="token function">SeqList_Length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span>  <span class="token function">SeqList_Capacity</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token macro property">#<span class="token directive keyword">endif</span></span>
-</code></pre>
-<h4 id="一-创建顺序表-SeqListAll-c"><a href="#一-创建顺序表-SeqListAll-c" class="headerlink" title="一. 创建顺序表(SeqListAll.c)"></a>一. 创建顺序表(SeqListAll.c)</h4><ol>
-<li><p>定义一个struct来保存顺序表信息</p>
+                <h1 id="SpringCloud-Eureka学习记录"><a href="#SpringCloud-Eureka学习记录" class="headerlink" title="SpringCloud  Eureka学习记录"></a>SpringCloud  Eureka学习记录</h1><h2 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h2><h3 id="微服务的定义"><a href="#微服务的定义" class="headerlink" title="微服务的定义"></a>微服务的定义</h3><p>​    简单来说微服务就是一种将单一应用程序拆分为一小组小型服务的方法,拆分完成后,每一个服务都运行在独立的进程中,服务与服务之间采用轻量级的通信进行沟通</p>
+<h3 id="为什么要用微服务"><a href="#为什么要用微服务" class="headerlink" title="为什么要用微服务"></a>为什么要用微服务</h3><p>互联网应用产品的两大特点：</p>
+<p>​    1、需求变化快</p>
+<p>​    2、用户群体大</p>
+<p>综上，使用传统的开发方式已经无法满足需求,需要一个能够灵活扩展,快读应对外部环境的应用</p>
+<h3 id="微服务的优势"><a href="#微服务的优势" class="headerlink" title="微服务的优势"></a>微服务的优势</h3><p>​    复杂度可控 ，独立部署，技术选型灵活，较好的容错性，较强的可扩展性</p>
+<h2 id="SpringCloud概述"><a href="#SpringCloud概述" class="headerlink" title="SpringCloud概述"></a>SpringCloud概述</h2><h3 id="什么是SpringCloud"><a href="#什么是SpringCloud" class="headerlink" title="什么是SpringCloud"></a>什么是SpringCloud</h3><p>​    SpringCloud内部包含许多框架,这些框架互相协作,共同构建分布式系统</p>
+<h3 id="核心特性"><a href="#核心特性" class="headerlink" title="核心特性"></a>核心特性</h3><p>​    服务注册与发现，负载均衡，服务之间调用，容错,服务降级,熔断器，消息总线，分布式配置中心</p>
+<h2 id="Eureka"><a href="#Eureka" class="headerlink" title="Eureka"></a>Eureka</h2><p>​    Eureka是SpringCloud的注册中心</p>
+<h3 id="Eureka的组成部分"><a href="#Eureka的组成部分" class="headerlink" title="Eureka的组成部分"></a>Eureka的组成部分</h3><ul>
+<li><p>服务端</p>
+<ul>
+<li>注册中心,用来接收其他服务的注册</li>
+</ul>
 </li>
-<li><p>为头节点分配内存</p>
-</li>
-<li><p>为顺序表分配空间，将顺序表空间地址保存在头节点中</p>
-</li>
-<li><p>将头节点地址返回给调用者</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//创建顺序表</span>
-SeqList<span class="token operator">*</span>  <span class="token function">SeqList_Create</span><span class="token punctuation">(</span><span class="token keyword">int</span> capacity<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> ret<span class="token punctuation">;</span>
-    TSeqList<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>TSeqList<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//为头节点分配空间</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//中间对象分配失败</span>
-        ret <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
-        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Create() error:%d\n"</span><span class="token punctuation">,</span>ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">//memset(temp,0,sizeof(TSeqList)); //填充</span>
-    temp<span class="token operator">-></span>capacity <span class="token operator">=</span> capacity<span class="token punctuation">;</span>
-    temp<span class="token operator">-></span>length <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    temp<span class="token operator">-></span>node <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">malloc</span><span class="token punctuation">(</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">int</span> <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">*</span> capacity<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//分配一个指针数组</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>node<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">//中间对象投指针分配失败</span>
-        ret <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
-        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Create() error:%d\n"</span><span class="token punctuation">,</span>ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-</li>
-</ol>
-<h4 id="二、求顺序表的容量"><a href="#二、求顺序表的容量" class="headerlink" title="二、求顺序表的容量"></a>二、求顺序表的容量</h4><ul>
-<li><p>直接从头节点获取</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//获取容量</span>
-<span class="token keyword">int</span> <span class="token function">SeqList_Capacity</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TSeqList<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList<span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> temp<span class="token operator">-></span>capacity<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<li><p>客户端</p>
+<ul>
+<li>客户端是一个java客户端,用来注册,并可以实现负载均衡等功能</li>
+</ul>
 </li>
 </ul>
-<h4 id="三、获取顺序表长度"><a href="#三、获取顺序表长度" class="headerlink" title="三、获取顺序表长度"></a>三、获取顺序表长度</h4><ul>
-<li><p>直接从头节点获取</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//求顺序表的长度</span>
-<span class="token keyword">int</span> <span class="token function">SeqList_Length</span><span class="token punctuation">(</span>SeqList <span class="token operator">*</span> list<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TSeqList <span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span>list<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> temp<span class="token operator">-></span>length<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<h3 id="Eureka的三个角色"><a href="#Eureka的三个角色" class="headerlink" title="Eureka的三个角色"></a>Eureka的三个角色</h3><ul>
+<li><p>Eureka Server:注册中心</p>
+<ul>
+<li>Eureka 服务器是服务注册中心，它负责维护服务提供者和服务消费者的信息。所有的服务提供者都向 Eureka 服务器注册自己的信息，而服务消费者则可以从 Eureka 服务器获取服务提供者的信息。</li>
+</ul>
+</li>
+<li><p>Eureka Provider:服务提供者 </p>
+<ul>
+<li>服务提供者是一个运行中的微服务应用，它将自己注册到 Eureka 服务器，以便其他服务能够发现和调用它。服务提供者向 Eureka 服务器发送心跳以表明其健康状态，并定期更新自己的信息，比如IP地址、端口号等。</li>
+</ul>
+</li>
+<li><p>Eureka Consumer :服务消费者</p>
+<ul>
+<li>服务消费者是依赖某个服务的微服务应用。它通过 Eureka 服务器来查找需要调用的服务提供者的信息，以便发起请求。</li>
+</ul>
 </li>
 </ul>
-<h4 id="四、插入元素"><a href="#四、插入元素" class="headerlink" title="四、插入元素"></a>四、插入元素</h4><ul>
-<li><p>当顺序表已满时，表中的元素向后无法移动。需要做出特别处理【不插入or开辟一块更大的空间】</p>
-</li>
-<li><p>当插入的位置是空闲区域时，需要作出相应处理</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//插入元素</span>
-<span class="token keyword">int</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">,</span>SeqListNode<span class="token operator">*</span> node<span class="token punctuation">,</span><span class="token keyword">int</span> pos<span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
-    TSeqList <span class="token operator">*</span>temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span> <span class="token operator">||</span> node<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//顺序表满了</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>length <span class="token operator">>=</span> temp<span class="token operator">-></span>capacity<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token keyword">if</span><span class="token punctuation">(</span>pos<span class="token operator">></span>temp<span class="token operator">-></span>length<span class="token punctuation">)</span>
-        pos <span class="token operator">=</span> temp<span class="token operator">-></span>length<span class="token punctuation">;</span>
-
-    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span>temp<span class="token operator">-></span>length<span class="token punctuation">;</span>i<span class="token operator">></span>pos<span class="token punctuation">;</span>i<span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        temp<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span>node<span class="token punctuation">;</span>
-    temp<span class="token operator">-></span>length<span class="token operator">++</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<h3 id="搭建Eureka服务端"><a href="#搭建Eureka服务端" class="headerlink" title="搭建Eureka服务端"></a>搭建Eureka服务端</h3><ul>
+<li><p>在启动类上添加<code>@EnableEurekaServer</code>注解来启用<code>Euerka</code>注册中心功能</p>
+<pre class=" language-java"><code class="language-java"> <span class="token annotation punctuation">@EnableEurekaServer</span>
+  <span class="token annotation punctuation">@SpringBootApplication</span>
+  <span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EurekaServerApplication</span> <span class="token punctuation">{</span>
+      <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          SpringApplication<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span>EurekaServerApplication<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
+</li>
+<li><p>添加配置文件</p>
+<pre class=" language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># 给当前服务取一个名字</span>
+<span class="token attr-name">spring.application.name</span><span class="token punctuation">=</span><span class="token attr-value">eureka</span>
+</code></pre>
+</li>
+<li><p>设置端口号</p>
+<pre class=" language-properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">1111</span>
+<span class="token attr-name">eureka.client.register-with-eureka</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+<span class="token comment" spellcheck="true"># 表示是否从 Eureka Server 上获取注册信息</span>
+<span class="token attr-name">eureka.client.fetch-registry</span><span class="token punctuation">=</span><span class="token attr-value">false</span>
+</code></pre>
+</li>
+<li><p>出现此界面即为搭建成功</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307281735986.png" alt="image-20230728173456816"></p>
 </li>
 </ul>
-<h4 id="五、删除元素"><a href="#五、删除元素" class="headerlink" title="五、删除元素"></a>五、删除元素</h4><ul>
-<li><p>从顺序表中删除某一个元素后需要将后面的元素依次向前移动来不齐空位</p>
-<pre class=" language-c"><code class="language-c"><span class="token operator">/</span>删除元素
-SeqList<span class="token operator">*</span> <span class="token function">SeqList_Delete</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">,</span><span class="token keyword">int</span> pos<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> i<span class="token punctuation">;</span>
-    TSeqList<span class="token operator">*</span>  tlist <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    SeqListNode<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    tlist <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span>list<span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">=</span><span class="token constant">NULL</span><span class="token operator">||</span> pos <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token operator">||</span> pos<span class="token operator">>=</span> tlist<span class="token operator">-></span>capacity<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"SeqList_DELET ERROR\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span> <span class="token punctuation">)</span>tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>pos<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//要删除的元素</span>
+<h3 id="搭建Eureka客户端"><a href="#搭建Eureka客户端" class="headerlink" title="搭建Eureka客户端"></a>搭建Eureka客户端</h3><p>1、添加pom.xml依赖</p>
+<pre class=" language-xml"><code class="language-xml"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.springframework.cloud<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>spring-cloud-starter-netflix-eureka-client<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
 
-    <span class="token keyword">for</span><span class="token punctuation">(</span>i<span class="token operator">=</span>pos<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>tlist<span class="token operator">-></span>length<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token number">-1</span><span class="token punctuation">]</span> <span class="token operator">=</span> tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">></span></span>org.springframework.boot<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">></span></span>spring-boot-starter-web<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>2、在main方法添加@EnableDiscoveryClient注解</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@EnableDiscoveryClient</span>
+<span class="token annotation punctuation">@SpringBootApplication</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EurekaClientApplication</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        SpringApplication<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span>EurekaClientApplication<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    tlist<span class="token operator">-></span>length<span class="token operator">--</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
+</code></pre>
+<p>3、application.properties添加配置文件</p>
+<pre class=" language-properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">1114</span>
+<span class="token attr-name">spring.application.name</span><span class="token punctuation">=</span><span class="token attr-value">eureka-client</span>
+<span class="token attr-name">eureka.client.service-url.defaultZone</span><span class="token punctuation">=</span><span class="token attr-value">http://localhost:1111/eureka</span>
+</code></pre>
+<p>出现以下界面则为成功</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230728174052488.png" alt="image-20230728174052488"></p>
+<h3 id="搭建Eureka注册中心集群"><a href="#搭建Eureka注册中心集群" class="headerlink" title="搭建Eureka注册中心集群"></a>搭建Eureka注册中心集群</h3><p>由于所有服务都会注册到注册中心去，服务之间的调用都是通过从注册中心获取的服务列表来调用，注册中心一旦宕机，所有服务调用都会出现问题。所以我们需要多个注册中心组成集群来提供服务，下面将搭建一个双节点的注册中心集群。</p>
+<p>1、 修改hosts</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307281748317.png" alt="image-20230728174855401"></p>
+<ul>
+<li><p>新建两个配置文件</p>
+<p>配置文件a</p>
+<pre class=" language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># 给当前服务取一个名字</span>
+<span class="token attr-name">spring.application.name</span><span class="token punctuation">=</span><span class="token attr-value">eureka</span>
+<span class="token comment" spellcheck="true"># 设置端口号</span>
+<span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">1111</span>
+<span class="token attr-name">eureka.instance.hostname</span><span class="token punctuation">=</span><span class="token attr-value">eureka1</span>
+<span class="token attr-name">eureka.client.register-with-eureka</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token comment" spellcheck="true"># 表示是否从 Eureka Server 上获取注册信息</span>
+<span class="token attr-name">eureka.client.fetch-registry</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token comment" spellcheck="true"># A 服务要注册到 B 上面</span>
+<span class="token attr-name">eureka.client.service-url.defaultZone</span><span class="token punctuation">=</span><span class="token attr-value">http://eureka2:1112/eureka</span>
+</code></pre>
+<p>配置文件b</p>
+<pre class=" language-properties"><code class="language-properties"><span class="token comment" spellcheck="true"># 给当前服务取一个名字</span>
+<span class="token attr-name">spring.application.name</span><span class="token punctuation">=</span><span class="token attr-value">eureka</span>
+<span class="token comment" spellcheck="true"># 设置端口号</span>
+<span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">1112</span>
+<span class="token attr-name">eureka.instance.hostname</span><span class="token punctuation">=</span><span class="token attr-value">eureka2</span>
+<span class="token attr-name">eureka.client.register-with-eureka</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token comment" spellcheck="true"># 表示是否从 Eureka Server 上获取注册信息</span>
+<span class="token attr-name">eureka.client.fetch-registry</span><span class="token punctuation">=</span><span class="token attr-value">true</span>
+<span class="token comment" spellcheck="true"># A 服务要注册到 B 上面</span>
+<span class="token attr-name">eureka.client.service-url.defaultZone</span><span class="token punctuation">=</span><span class="token attr-value">http://eureka1:1111/eureka</span>
 </code></pre>
 </li>
-</ul>
-<h4 id="六、查找元素"><a href="#六、查找元素" class="headerlink" title="六、查找元素"></a>六、查找元素</h4><ul>
-<li><p>使用数组下标查找,非常方便</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//查找</span>
-SeqList<span class="token operator">*</span> <span class="token function">SeqList_Get</span><span class="token punctuation">(</span>SeqList <span class="token operator">*</span> list<span class="token punctuation">,</span><span class="token keyword">int</span> pos<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token comment" spellcheck="true">//健壮性判断</span>
-    TSeqList<span class="token operator">*</span> tlist <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    SeqListNode<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    tlist <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token operator">||</span> pos<span class="token operator">&lt;</span><span class="token number">0</span> <span class="token operator">||</span> pos <span class="token operator">>=</span> tlist<span class="token operator">-></span>capacity<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"SeqList_Get error\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span>tlist<span class="token operator">-></span>node<span class="token punctuation">[</span>pos<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> temp<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<li><p>运行两个实例</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307281752491.png"></p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/zhao-imgs/images/202307281752830.png" alt="image-20230728175212793"></p>
 </li>
 </ul>
-<h4 id="七、清空表"><a href="#七、清空表" class="headerlink" title="七、清空表"></a>七、清空表</h4><ul>
-<li><p>将表中的元素全部置为0</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//清空表</span>
-<span class="token keyword">void</span> <span class="token function">SeqListClean</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TSeqList <span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
-    temp<span class="token operator">-></span>length<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//menset(temp->node,0,(temp->capacity * sizeof(void *)));</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+<h3 id="Eureka-的工作细节"><a href="#Eureka-的工作细节" class="headerlink" title="Eureka 的工作细节"></a>Eureka 的工作细节</h3><ul>
+<li><p>Eureka 服务器（Server）的功能：</p>
+<ul>
+<li><p>服务注册表管理：</p>
+<p>​    服务器记录所有已注册的服务实例的信息，以供其他服务查询。</p>
+</li>
+<li><p>服务注册信息存储：</p>
+<p>​    服务器保存服务实例的注册信息，以便快速响应查询请求。</p>
+</li>
+<li><p>服务实例健康检查：</p>
+<p>​    服务器定期检查服务实例的心跳信息，确保它们正常工作。</p>
+</li>
+<li><p>服务实例信息同步：</p>
+<p>​    服务器把服务实例的变化通知给客户端，保持注册表的最新状态。</p>
+</li>
+<li><p>自我保护机制：</p>
+<p>​    服务器在与大多数客户端通信故障时，保护注册表中的服务实例，防止服务之间完全失联。</p>
 </li>
 </ul>
-<h4 id="八、销毁表"><a href="#八、销毁表" class="headerlink" title="八、销毁表"></a>八、销毁表</h4><ul>
-<li><p>将整个表销毁</p>
-<pre class=" language-c"><code class="language-c"><span class="token comment" spellcheck="true">//销毁表</span>
-<span class="token keyword">void</span> <span class="token function">Seqlist_Destory</span><span class="token punctuation">(</span>SeqList<span class="token operator">*</span> list<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    TSeqList<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>list<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    temp <span class="token operator">=</span> <span class="token punctuation">(</span>TSeqList <span class="token operator">*</span><span class="token punctuation">)</span> list<span class="token punctuation">;</span>
-    <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>node <span class="token operator">!=</span> <span class="token constant">NULL</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token function">free</span><span class="token punctuation">(</span>temp<span class="token operator">-></span>node<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token function">free</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
+</li>
+<li><p>Eureka 客户端（Client）的功能：</p>
+<ul>
+<li>服务注册：</li>
+</ul>
+<p>​    客户端将自己的服务信息告诉服务器，让其他服务可以找到它。</p>
+<ul>
+<li><p>心跳和续约：</p>
+<p>​    客户端定期向服务器发送信号，表明它还活着。让服务器就知道实例还在运行，并保持最新的信息。</p>
+</li>
+<li><p>服务下线：</p>
+<p>   客户端通知服务器，自己即将关闭或停止服务，服务器将把它从列表中移除。</p>
+</li>
+<li><p>服务发现</p>
+<p>   客户端向服务器询问需要访问的其他服务的信息，服务器返回可用的服务实例。</p>
 </li>
 </ul>
-<h4 id="九、测试-test-c"><a href="#九、测试-test-c" class="headerlink" title="九、测试(test.c)"></a>九、测试(test.c)</h4><pre class=" language-c"><code class="language-c"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"SeqList.c"</span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;stdio.h></span></span>
-<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;malloc.h></span></span>
-
-<span class="token keyword">typedef</span> <span class="token keyword">struct</span> _Teacher <span class="token punctuation">{</span>
-    <span class="token keyword">char</span> name<span class="token punctuation">[</span><span class="token number">32</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> age<span class="token punctuation">;</span>
-<span class="token punctuation">}</span>Teacher<span class="token punctuation">;</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">int</span> ret <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    SeqList<span class="token operator">*</span> list <span class="token operator">=</span> <span class="token constant">NULL</span><span class="token punctuation">;</span>
-    Teacher t1<span class="token punctuation">,</span>t2<span class="token punctuation">,</span>t3<span class="token punctuation">,</span>t4<span class="token punctuation">,</span>t5<span class="token punctuation">;</span>
-    t1<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">31</span><span class="token punctuation">;</span>
-    t2<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
-    t3<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">33</span><span class="token punctuation">;</span>
-    t4<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">34</span><span class="token punctuation">;</span>
-    t5<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">35</span><span class="token punctuation">;</span>
-    <span class="token comment" spellcheck="true">//创建节点</span>
-    list <span class="token operator">=</span> <span class="token function">SeqList_Create</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">//插入节点</span>
-    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t1<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t2<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t3<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t4<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    ret <span class="token operator">=</span> <span class="token function">SeqList_Insert</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span><span class="token punctuation">(</span>SeqListNode <span class="token operator">*</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>t5<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"顺序表容量%d\n"</span><span class="token punctuation">,</span><span class="token function">SeqList_Capacity</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"顺序表长度%d\n"</span><span class="token punctuation">,</span><span class="token function">SeqList_Length</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token comment" spellcheck="true">//遍历顺序表</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"遍历顺序表: \n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token function">SeqList_Length</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        Teacher<span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token punctuation">(</span>Teacher <span class="token operator">*</span><span class="token punctuation">)</span> <span class="token function">SeqList_Get</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Get error"</span><span class="token punctuation">,</span>ret<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-            <span class="token comment" spellcheck="true">//return;</span>
-        <span class="token punctuation">}</span>
-        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"age: %d\n"</span><span class="token punctuation">,</span>temp<span class="token operator">-></span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment" spellcheck="true">//销毁链表</span>
-    <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"销毁顺序表: \n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token function">SeqList_Length</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token operator">></span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        Teacher <span class="token operator">*</span> temp <span class="token operator">=</span> <span class="token punctuation">(</span>Teacher <span class="token operator">*</span><span class="token punctuation">)</span><span class="token function">SeqList_Delete</span><span class="token punctuation">(</span>list<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-            <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"func SeqList_Delete error"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"age :%d\n"</span><span class="token punctuation">,</span>temp<span class="token operator">-></span>age<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token function">Seqlist_Destory</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token function">system</span><span class="token punctuation">(</span><span class="token string">"pause"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+</li>
+</ul>
+<h3 id="服务注册与消费"><a href="#服务注册与消费" class="headerlink" title="服务注册与消费"></a>服务注册与消费</h3><ul>
+<li><p>服务注册</p>
+<ul>
+<li>服务提供者在启动时会向 Eureka 服务器发送注册请求，包含自身的服务名称、主机名、端口号等信息。Eureka 服务器会将这些信息记录在注册表中，并为服务提供者分配一个唯一的标识符（通常是服务实例的ID）。这样，其他服务消费者可以通过查询 Eureka 服务器来获取服务提供者的信息，并与其进行通信。</li>
+</ul>
+</li>
+<li><p>服务消费</p>
+<ul>
+<li>服务消费者通过向 Eureka 服务器发送查询请求，获取需要访问的服务提供者的信息。Eureka 服务器返回一个或多个可用的服务实例给服务消费者。然后，服务消费者可以使用这些信息来建立与服务提供者的通信连接，并发送请求获取所需的数据或执行相应的操作。</li>
+</ul>
+</li>
+</ul>
+<p>示例</p>
+<p>服务注册端：</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RestController</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HelloController</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">"/hello"</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> String <span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token string">"hello javaboy"</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 </code></pre>
+<p>服务调用端:</p>
+<p>​    controller</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@RestController</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">ConsumController</span> <span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token annotation punctuation">@Qualifier</span><span class="token punctuation">(</span><span class="token string">"restTemplate"</span><span class="token punctuation">)</span>
+    RestTemplate restTemplate<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@GetMapping</span><span class="token punctuation">(</span><span class="token string">"/hello3"</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> String <span class="token function">hello3</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> restTemplate<span class="token punctuation">.</span><span class="token function">getForObject</span><span class="token punctuation">(</span><span class="token string">"http://eureka-client/hello"</span><span class="token punctuation">,</span> String<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>​    启动类</p>
+<pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@EnableDiscoveryClient</span>
+<span class="token annotation punctuation">@SpringBootApplication</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EurekaConsumApplication</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        SpringApplication<span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span>EurekaConsumApplication<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Bean</span>
+    RestTemplate <span class="token function">restTemplateOne</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">RestTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token annotation punctuation">@Bean</span>
+    <span class="token annotation punctuation">@LoadBalanced</span>
+    RestTemplate <span class="token function">restTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">RestTemplate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>​    运行结果</p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20230728180243438.png" alt="image-20230728180243438"> </p>
 
                 
             </div>
@@ -836,7 +784,7 @@ SeqList<span class="token operator">*</span> <span class="token function">SeqLis
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://xiaozhaoc.github.io/posts/d180.html">http://xiaozhaoc.github.io/posts/d180.html</a>
+                    <a href="http://xiaozhaoc.github.io/posts/bb66.html">http://xiaozhaoc.github.io/posts/bb66.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -874,16 +822,8 @@ SeqList<span class="token operator">*</span> <span class="token function">SeqLis
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/c/">
-                                    <span class="chip bg-color">c</span>
-                                </a>
-                            
-                                <a href="/tags/datastructure/">
-                                    <span class="chip bg-color">datastructure</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">课堂笔记</span>
+                                <a href="/tags/SpringCloud/">
+                                    <span class="chip bg-color">SpringCloud</span>
                                 </a>
                             
                         </div>
@@ -1321,9 +1261,56 @@ SeqList<span class="token operator">*</span> <span class="token function">SeqLis
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/posts/bb66.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/8.jpg" class="responsive-img" alt="SpringCloud  Eureka学习记录">
+                        
+                        <span class="card-title">SpringCloud  Eureka学习记录</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            zhang
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/SpringCloud/">
+                        <span class="chip bg-color">SpringCloud</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/posts/0.html">
                     <div class="card-image">
@@ -1341,45 +1328,8 @@ SeqList<span class="token operator">*</span> <span class="token function">SeqLis
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-17
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            zhang
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/posts/c9f9.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="https://cdn.jsdelivr.net/gh/xiaozhaoc/cdn@latest/medias/featureimages/0.jpg" class="responsive-img" alt="test2">
-                        
-                        <span class="card-title">test2</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-12
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-13
                             </span>
                         <span class="publish-author">
                             
@@ -1388,14 +1338,6 @@ SeqList<span class="token operator">*</span> <span class="token function">SeqLis
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
                 </div>
                 
             </div>
